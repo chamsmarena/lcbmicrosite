@@ -731,6 +731,11 @@ tr:last-of-type td {
 	background-blend-mode:multiply;
 	background-position: 50% 0;
 }
+#title4 {
+	background:url('../img/img-SSD-slider3.jpg') center center / cover fixed no-repeat rgba(0,0,0,0.3);
+	background-blend-mode:multiply;
+	background-position: 50% 0;
+}
 .touch .title {
 	background-attachment:scroll !important;
 }

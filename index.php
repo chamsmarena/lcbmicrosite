@@ -75,13 +75,18 @@
 			<div class="hamburger" style='z-index:1000;'>
 				<span onclick="openNav()" class="openbtn">&larr; <strong>MENU: CRISIS IN SOUTH SUDAN</strong></span>
 			</div>
+			
+			
+			
+			
+			<!-- BLOC SLIDE -->
 			<div id="slideshow" class="slideshow">
 				<!-- slide 1 -->
 				<section id="title1" class="title" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -400px;" data-bottom-top="background-position: 50% 300px;" data-anchor-target="#title1">
 					<div class="wrapper astable">
 						<div class="title-info">
 							<p data-localize="main_text1">Nigeria and<br/>the Lake Chad Basin:</p>
-							<h1 data-localize="main_figure1">7.6 MILLION</h1>
+							<h1 data-localize="main_figure1">10.9 MILLION</h1>
 							<p data-localize="main_paragraph1">People in Need</p>
 							<a href="https://secure.globalproblems-globalsolutions.org/site/Donation2;jsessionid=39EC3E9CF71F21C13A838DA263E1D1D0.app244a?df_id=10604&10604.donation=form1" target="_blank" class="button red-bk donate donatebutton" data-localize="donate_button">Donate</a>
 						</div>
@@ -96,8 +101,8 @@
 					<div class="wrapper astable">
 						<div class="title-info">
 							<p data-localize="main_text1">Nigeria and<br/>the Lake Chad Basin:</p>
-							<h1 data-localize="main_figure2">6 MILLION +</h1>
-							<p data-localize="main_paragraph2">People Severely Food Insecure</p>
+							<h1 data-localize="main_figure2">2.3 MILLION</h1>
+							<p data-localize="main_paragraph2">People Displaced</p>
 							<a href="https://secure.globalproblems-globalsolutions.org/site/Donation2;jsessionid=39EC3E9CF71F21C13A838DA263E1D1D0.app244a?df_id=10604&10604.donation=form1" target="_blank" class="button red-bk donate donatebutton" data-localize="donate_button">Donate</a>
 						</div>
 					</div>
@@ -111,8 +116,23 @@
 					<div class="wrapper astable">
 						<div class="title-info">
 							<p data-localize="main_text1">Nigeria and<br/>the Lake Chad Basin:</p>
-							<h1 data-localize="main_figure3">4 MILLION</h1>
-							<p data-localize="main_paragraph3">People Displaced</p>
+							<h1 data-localize="main_figure3">7.2 MILLION</h1>
+							<p data-localize="main_paragraph3">People Severely Food Insecure</p>
+							<a href="https://secure.globalproblems-globalsolutions.org/site/Donation2;jsessionid=39EC3E9CF71F21C13A838DA263E1D1D0.app244a?df_id=10604&10604.donation=form1" target="_blank" class="button red-bk donate donatebutton" data-localize="donate_button">Donate</a>
+						</div>
+					</div>
+					<div class="nexttext wrapper" data--500-top="opacity:0;" data-center="opacity:1;" data-anchor-target="#title3">
+						<p class="photocredit" data-localize="photocredit3">Photo: OCHA</p>
+						<p><a href="#situationposition" data-localize="next_situation">NEXT: SITUATION</a></p>
+					</div>
+				</section>
+				<!-- slide 4 -->
+				<section id="title4" class="title" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -400px;" data-bottom-top="background-position: 50% 300px;" data-anchor-target="#title3">
+					<div class="wrapper astable">
+						<div class="title-info">
+							<p data-localize="main_text1">Nigeria and<br/>the Lake Chad Basin:</p>
+							<h1 data-localize="main_figure3">515 000</h1>
+							<p data-localize="main_paragraph3">Children Severly Malnourished</p>
 							<a href="https://secure.globalproblems-globalsolutions.org/site/Donation2;jsessionid=39EC3E9CF71F21C13A838DA263E1D1D0.app244a?df_id=10604&10604.donation=form1" target="_blank" class="button red-bk donate donatebutton" data-localize="donate_button">Donate</a>
 						</div>
 					</div>
@@ -123,19 +143,24 @@
 				</section>
 			</div>
 			
+			
+			
+			
+			<!-- BLOC SITUATION -->
 			<a id="situationposition"></a>
 			<section id="situation" class="content">
 				<div class="wrapper">
 					<div class="section-info">
 						<h1 data-localize="situation">Situation</h1>
-						<p data-localize="situation_text">The humanitarian crisis in South Sudan has grown to epic proportions due to an increase in conflict since early this year. Food insecurity, displacement, diseases and violence against civilians are the main challenges facing the country today.</p>
+						<p data-localize="situation_text">The crisis in the Lake Chad Basin is affecting millions of people across Cameroon, Chad, Niger and Nigeria. After eight years of conflict, many communities are on the brink of disaster.</p>
+						<p data-localize="situation_text">Scaled-up assistance helped avert famine in 2017, but gains remain highly fragile. One in two families will require sustained assistance to survive and rebuild their lives.</p>
 					</div>
 					<div class="row">
 						<div id="people-in-need" class="col3 infobox">
 							<img class="sectionicon" src="img/icon-SSD-peopleinneed.png"/>
 							<h3 data-localize="people_in_need_title">People In Need</h3>
 							<div class="col1">
-								<p class="figure" data-localize="figure_people_in_need"><span class="big-number decimal-figure">7.6</span>Million</p>
+								<p class="figure" data-localize="figure_people_in_need"><span class="big-number decimal-figure">10.9</span>Million</p>
 							</div>
 							<h4 data-localize="infographic_people_in_need_header">Sectors Most in Need</h4>
 							<div class="infographic">
@@ -148,7 +173,7 @@
 							<img class="sectionicon" src="img/icon-SSD-peopledisplaced.png"/>
 							<h3 data-localize="malnourished_title">People Displaced</h3>
 							<div>
-								<p class="figure" data-localize="figure_displaced"><span class="big-number decimal-figure">3.9</span>Million</p>
+								<p class="figure" data-localize="figure_displaced"><span class="big-number decimal-figure">2.3</span>Million</p>
 							</div>
 							<h4 data-localize="infographic_displacement_header">By Type of Displacement</h4>
 							<div class="infographic">
@@ -164,7 +189,7 @@
 							<img class="sectionicon" src="img/icon-SSD-peoplemalnourished.png"/>
 							<h3 data-localize="malnourished_title">People Severely Food Insecure</h3>
 							<div class="col1">
-								<p class="figure" data-localize="figure_malnourished"><span class="big-number decimal-figure">6.0</span>Million +</p>
+								<p class="figure" data-localize="figure_malnourished"><span class="big-number decimal-figure">7.2</span>Million</p>
 							</div>
 							<h4 data-localize="infographic_foodsec_header">By Food Security Phase</h4>
 							<div class="infographic">
@@ -179,12 +204,15 @@
 				
 				<div class="big-photo" id="situation-photo">
 					<div class="photo-caption">
-						<p data-localize="situation_photocaption">Despite these challenges, aid workers have reached millions of people with assistance and protection since the beginning of the year. However, much more still needs to be done.</p>
+						<p data-localize="situation_photocaption">The humanitarian response in 2017 has been effective, reaching millions of people and saving thousands of lives.</p>
 					</div>
 				</div>
-				
 			</section>
 			
+			
+			
+			
+			<!-- BLOC FOOD SECURITY -->
 			<a id="foodsecurity-position"></a>
 			<section id="food-security" class="content">
 				<div class="wrapper">
@@ -195,7 +223,7 @@
 					</div>
 					<h4 data-localize="infographic_foodmap_header">Food Security Phases By County</h4>
 					<div id="map-situation" class="infographic" allowfullscreen>
-						<iframe src="food_insecurity/en/index.php" allowfullscreen data-localize="foodsecurity_map" ></iframe>
+						<iframe width="100%" height="520" frameborder="0" src="https://chamsmarena.carto.com/builder/bba70894-9fc8-485f-a322-c9442f17a5d8/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 					</div>
 					<p class="sources" data-localize="foodsecurity_sources">Sources: Nutrition Cluster, IPC Technical Working Group, UN Geographic Information Section, South Sudan Inter Cluster Information Management Working Group, National Bureau of Statistics and OCHA</p>
 				</div>
@@ -207,6 +235,10 @@
 				</div>
 			</section>
 			
+			
+			
+			
+			<!-- BLOC HEALTH -->
 			<a id="healthposition"></a>
 			<section id="health" class="content">
 				<div class="wrapper">
@@ -243,6 +275,10 @@
 				</div>
 			</section>
 			
+			
+			
+			
+			<!-- BLOC PROTECTION -->
 			<a id="protectionposition"></a>
 			<section id="protection" class="content">
 				<div class="wrapper">
@@ -283,6 +319,12 @@
 				</div>
 			</section>
 			
+			
+			
+			
+			
+			
+			<!-- BLOC FUNDING -->
 			<a id="fundingposition"></a>
 			<section id="funding" class="content">
 				<div class="wrapper">
@@ -314,6 +356,10 @@
 				</div>
 			</section>
 			
+			
+			
+			
+			<!-- BLOC CONTACT -->
 			<a id="contactposition"></a>
 			<footer id="contact">
 				<div class="wrapper">
