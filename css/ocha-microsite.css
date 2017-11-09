@@ -2,6 +2,10 @@
 * {
     outline: 1px solid red !important;
 }*/
+.carte2x3{
+	width:calc(66% - 40px);
+	margin-right: 40px;
+}
 html, body, #main {
 	margin:0;
 	padding:0;
@@ -847,6 +851,13 @@ tr:last-of-type td {
 #funding .percent-funded {
 	max-height:150px;
 }
+#funding-requirements .row{
+	height:150px;
+	max-height:150px;
+}
+#funding-total .percent-funded-country{
+	max-height:150px;
+}
 #funding .figure {
 	position:relative;
 	bottom:8px;
@@ -856,6 +867,23 @@ tr:last-of-type td {
 	display:inline-block;
 	margin-right:0px;
 	margin-top:60px;
+}
+.CountryName {
+	font-size:30px;
+	margin-top:55px;
+}
+.figureCountry {
+	font-size:30px;
+}
+.big-number_rowca {
+	font-size:100px;
+	display:inline-block;
+	margin-right:0px;
+	margin-top:60px;
+}
+.col33 {
+	width:calc(33% - 40px);
+	    margin-right: 40px;
 }
 #people-in-need,#displaced,#malnourished,#funding-requirements,#funding-total {
 	display:none;
@@ -1077,6 +1105,14 @@ a.more-link:hover, a.more-link:focus {
 .tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
 .tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
 .tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
+
+/*------ RIOWCA ------*/
+.chiffres{font-size:26px;}
+.labelsChiffresInfographic{font-size:16px;}
+.refugees{color:rgb(200,200,200);}
+.idps{color:rgb(65,143,222);}
+.returnes{color:rgb(250,87,92);}
+
 
 /*----- MAPS ------*/
 iframe {border:0; width:100%; height:700px;}

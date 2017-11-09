@@ -4,7 +4,10 @@
 	
 	// set the planids for each country's HRP
 	$thecountry = array(
-		'South Sudan' => array('538','south_sudan'),
+		'Niger' => array('530','niger'),
+		'Nigeria' => array('536','nigeria'),
+		'Cameroon' => array('537','cameroon'),
+		'Chad' => array('532','chad'),
 	);
 	
 	// authorize API and return results
@@ -25,7 +28,7 @@
 		$result = curl_exec($ch);
 		curl_close($ch);
 		$result = json_decode($result);
-		
+	
 		//return results
 		return $result;
 	} //end getFTSdata

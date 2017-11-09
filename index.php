@@ -5,11 +5,11 @@
 		<meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 		<title>Crisis in South Sudan</title>
-		<meta name="description" content="Crisis in South Sudan"/>
+		<meta name="description" content="Lake Chad Basin"/>
 		<meta name="author" content="OCHA Visual Information Unit"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		
-		<meta name="twitter:card" content="Crisis in South Sudan" />
+		<meta name="twitter:card" content="Lake Chad Basin" />
 		<meta name="twitter:site" content="@unocha" />
 		<meta name="twitter:creator" content="@unocha" />
 		<meta property="og:url" content="http://interactive.unocha.org/emergency/2017_south_sudan/" />
@@ -155,20 +155,27 @@
 						<p data-localize="situation_text">The crisis in the Lake Chad Basin is affecting millions of people across Cameroon, Chad, Niger and Nigeria. After eight years of conflict, many communities are on the brink of disaster.</p>
 						<p data-localize="situation_text">Scaled-up assistance helped avert famine in 2017, but gains remain highly fragile. One in two families will require sustained assistance to survive and rebuild their lives.</p>
 					</div>
+					
+				</div> <!-- end wrapper -->
+				
+				<div class="big-photo" id="situation-photo">
+					<div class="photo-caption">
+						<p data-localize="situation_photocaption">The humanitarian response in 2017 has been effective, reaching millions of people and saving thousands of lives.</p>
+					</div>
+				</div>
+			</section>
+			
+			
+			
+			
+			<!-- BLOC PEOPLE IN NEED -->
+			<a id="peopleinneedposition"></a>
+			<section id="situation" class="content">
+				<div class="wrapper">
+					<div class="section-info">
+						<h1 data-localize="situation">10.9 Million PEOPLE IN NEED</h1>
+					</div>
 					<div class="row">
-						<div id="people-in-need" class="col3 infobox">
-							<img class="sectionicon" src="img/icon-SSD-peopleinneed.png"/>
-							<h3 data-localize="people_in_need_title">People In Need</h3>
-							<div class="col1">
-								<p class="figure" data-localize="figure_people_in_need"><span class="big-number decimal-figure">10.9</span>Million</p>
-							</div>
-							<h4 data-localize="infographic_people_in_need_header">Sectors Most in Need</h4>
-							<div class="infographic">
-								<table>
-									<!-- data inserts here -->
-								</table>
-							</div>
-						</div>
 						<div id="displaced" class="col3 infobox">
 							<img class="sectionicon" src="img/icon-SSD-peopledisplaced.png"/>
 							<h3 data-localize="malnourished_title">People Displaced</h3>
@@ -178,20 +185,57 @@
 							<h4 data-localize="infographic_displacement_header">By Type of Displacement</h4>
 							<div class="infographic">
 								<div class='row'>
-									<div class='col3' data-localize="figure_refugees"><span class="grey label">2.0M<br/><strong>Refugees</strong></span></div>
 									<div class='col3 chart' style="min-height:149px;"></div>
-									<div class='col3' data-localize="figure_idps"><span class="blue label">1.9M<br/><strong>IDPs</strong></span></div>
+									<div class='col3' data-localize="figure_refugees">
+										<span class="chiffres idps">2.1M </span><span class="labelsChiffresInfographic"><br/><strong>IDPs</strong></span><br/>
+										<span class="chiffres refugees">203K </span><span class="labelsChiffresInfographic"><br/><strong>Refugees</strong></span><br/>
+										<span class="chiffres returnes">29K </span><span class="labelsChiffresInfographic"><br/><strong>Returnes</strong></span>
+									</div>
 								</div>
 								<!-- data inserts here -->
 							</div>
 						</div>
+						
+						<div class="carte2x3 infobox">
+							<iframe width="100%" height="520" frameborder="0" src="https://chamsmarena.carto.com/builder/bba70894-9fc8-485f-a322-c9442f17a5d8/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="row">
+						<div id="displacedByCountry" class="col3 infobox">
+							<img class="sectionicon" src="img/icon-SSD-peopledisplaced.png"/>
+							<h3 data-localize="malnourished_title">People Displaced</h3>
+							<div class="col1">
+								<p class="figure" data-localize="figure_malnourished"><span class="big-number decimal-figure">1.6</span>Million</p>
+							</div>
+							<h4 data-localize="infographic_foodsec_header">By Coutry</h4>
+							<div class="infographic">
+								<table>
+									<!-- data inserts here -->
+								</table>
+							</div>
+						</div>
+						
 						<div id="malnourished" class="col3 infobox">
 							<img class="sectionicon" src="img/icon-SSD-peoplemalnourished.png"/>
 							<h3 data-localize="malnourished_title">People Severely Food Insecure</h3>
 							<div class="col1">
 								<p class="figure" data-localize="figure_malnourished"><span class="big-number decimal-figure">7.2</span>Million</p>
 							</div>
-							<h4 data-localize="infographic_foodsec_header">By Food Security Phase</h4>
+							<h4 data-localize="infographic_foodsec_header">By Coutry</h4>
+							<div class="infographic">
+								<table>
+									<!-- data inserts here -->
+								</table>
+							</div>
+						</div>
+						
+						<div id="people-in-need" class="col3 infobox">
+							<img class="sectionicon" src="img/icon-SSD-peopleinneed.png"/>
+							<h3 data-localize="people_in_need_title">Severely Malnourished Children </h3>
+							<div class="col1">
+								<p class="figure" data-localize="figure_people_in_need"><span class="big-number decimal-figure">515,000</span></p>
+							</div>
+							<h4 data-localize="infographic_people_in_need_header">By Coutry</h4>
 							<div class="infographic">
 								<table>
 									<!-- data inserts here -->
@@ -200,7 +244,7 @@
 						</div>
 					</div>
 					<p class="sources" id="inneed-source" data-localize="situation_sources">Sources: Humanitarian partners, UNHCR, OCHA and partners, IPC Technical Working Group</p>
-				</div> <!-- end wrapper -->
+				</div> 
 				
 				<div class="big-photo" id="situation-photo">
 					<div class="photo-caption">
@@ -218,19 +262,34 @@
 				<div class="wrapper">
 					<div class="section-info">
 						<h1 data-localize="foodsecurity_title">Food Security</h1>
-						<p data-localize="foodsecurity_text">Due to early warning and robust action, humanitarians have prevented localized famine in Leer and Mayendit. However, food insecurity has reached unprecedented levels, and many people are still on the brink of famine.</p>
+						<p data-localize="foodsecurity_text">Food insecurity and malnutrition have reached unprecedented levels pushing several areas in north-east Nigeria on the brink of famine. Only massively scaled-up assistance averted a catastrophe.</p>
 						<img class="sectionicon" src="img/icon-SSD-foodsecurity.png"/>
 					</div>
-					<h4 data-localize="infographic_foodmap_header">Food Security Phases By County</h4>
-					<div id="map-situation" class="infographic" allowfullscreen>
-						<iframe width="100%" height="520" frameborder="0" src="https://chamsmarena.carto.com/builder/bba70894-9fc8-485f-a322-c9442f17a5d8/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+					
+					<div class="row">
+						<div id="foodsecurityphaseAdmin1" class="col3 infobox">
+							<img class="sectionicon" src="img/icon-SSD-peoplemalnourished.png"/>
+							<h3 data-localize="malnourished_title">People Severely Food Insecure</h3>
+							<div class="col1">
+								<p class="figure" data-localize="figure_malnourished"><span class="big-number decimal-figure">2.7</span>Million</p>
+							</div>
+							<h4 data-localize="infographic_foodsec_header">By phase</h4>
+							<div class="infographic">
+								<table>
+									<!-- data inserts here -->
+								</table>
+							</div>
+						</div>
+						
+						<div class="carte2x3 infobox">
+							<iframe width="100%" height="520" frameborder="0" src="https://chamsmarena.carto.com/builder/216e8d0a-7665-4fa0-b5d6-db86d70919dc/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+						</div>
 					</div>
-					<p class="sources" data-localize="foodsecurity_sources">Sources: Nutrition Cluster, IPC Technical Working Group, UN Geographic Information Section, South Sudan Inter Cluster Information Management Working Group, National Bureau of Statistics and OCHA</p>
 				</div>
 				
 				<div class="big-photo" id="foodsecurity-photo">
 					<div class="photo-caption">
-						<p data-localize="foodsecurity_photocaption">Countrywide, approximately half of the South Sudanese population is estimated to be severely food insecure. This includes populations in Ayod, Koch, Leer and Mayendit counties who are facing catastrophic conditions.</p>
+						<p data-localize="foodsecurity_photocaption">Today, over two million people are receiving food assistance across the region. These crucial achievements need to be bolstered to pave the way to restoring livelihoods. </p>
 					</div>
 				</div>
 			</section>
@@ -238,13 +297,75 @@
 			
 			
 			
-			<!-- BLOC HEALTH -->
+			<!-- BLOC PROTECTION -->
+			<a id="protectionposition"></a>
+			<section id="protection" class="content">
+				<div class="wrapper">
+					<div class="section-info">
+						<h1 data-localize="protection_title">Protection of civilians</h1>
+						<p data-localize="protection_text">Civilians are bearing the brunt of the conflict. Violent attacks have increased in recent months and displacement continues to cause serious protection risks and rights violations. Women and girls are particularly vulnerable. Thousands have been kidnapped and subjected to abuse, forced labour, and sexual slavery. The number of boys and girls forcibly used as suicide bombers by Boko Haram has steeply increased in 2017.</p>
+					</div>
+					<div class="row">
+						<div id="numberOfIncidents" class="col3 infobox">
+							<img class="sectionicon" src="img/icon-SSD-peoplemalnourished.png"/>
+							<h3 data-localize="malnourished_title">People Severely Food Insecure</h3>
+							<div class="col1">
+								<p class="figure" data-localize="figure_malnourished"><span class="big-number decimal-figure">2.7</span>Million</p>
+							</div>
+							<h4 data-localize="infographic_foodsec_header">By phase</h4>
+							<div class="infographic">
+								<table>
+									<!-- data inserts here -->
+								</table>
+							</div>
+						</div>
+						
+						<div class="carte2x3 infobox">
+							<iframe width="100%" height="520" frameborder="0" src="https://chamsmarena.carto.com/builder/e9714b00-b5ee-4c4a-bbd8-a9d2cc077a38/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="row">
+						<div id="aidworkers" class="col3 infobox">
+							<img class="sectionicon" src="img/icon-SSD-aidworkers.png"/>
+							<h3 data-localize="aidworkers_title">Number of women and children in need of protection</h3>
+							<div class="col1">
+								<p class="figure" data-localize="figure_aidworkers"><span class="big-number decimal-figure">736,000</span></p>
+							</div>
+						</div>
+						<div id="violence" class="col3 infobox">
+							<img class="sectionicon" src="img/icon-SSD-harassment.png"/>
+							<h3 data-localize="violence_title">SGBV cases</h3>
+							<div class="col1">
+								<p class="figure" data-localize="figure_violence"><span class="big-number decimal-figure">600,000</span></p>
+							</div>
+						</div>
+						<div id="children" class="col3 infobox">
+							<img class="sectionicon" src="img/icon-SSD-militarykids.png"/>
+							<h3 data-localize="children_title">Children used as suicide bombers</h3>
+							<div class="col1">
+								<p class="figure" data-localize="figure_children"><span class="big-number decimal-figure">600,000</span></p>
+							</div>
+						</div>
+					</div>
+					<p class="sources" data-localize="protection_sources">Sources: OCHA, Protection Cluster, UNICEF.</p>
+				</div>
+				
+				<div class="big-photo" id="protection-photo">
+					<div class="photo-caption">
+						<p data-localize="protection_photocaption">With greater resources, we can lead a more effective and coherent humanitarian response, placing emphasis on the protection of women, children and aid workers, and advocating that we are “not a target”.</p>
+					</div>
+				</div>
+			</section>
+			
+			
+			
+			<!-- BLOC EDUCATION -->
 			<a id="healthposition"></a>
 			<section id="health" class="content">
 				<div class="wrapper">
 					<div class="section-info">
-						<h1 data-localize="health_title">Health Crisis</h1>
-						<p data-localize="health_text">Susceptibility to disease has risen after nearly four years of conflict and crisis. South Sudan is experiencing the longest, deadliest and most widespread cholera outbreak since its independence in 2011. With the rainy season intensifying, malaria cases have been increasing.</p>
+						<h1 data-localize="health_title">Education</h1>
+						<p data-localize="health_text">Civilians are bearing the brunt of the conflict. Violent attacks have increased in recent months and displacement continues to cause serious protection risks and rights violations. Women and girls are particularly vulnerable. Thousands have been kidnapped and subjected to abuse, forced labour, and sexual slavery. The number of boys and girls forcibly used as suicide bombers by Boko Haram has steeply increased in 2017.</p>
 						<img class="sectionicon" src="img/icon-SSD-health.png"/>
 					</div>
 					<div class="row">
@@ -276,76 +397,91 @@
 			</section>
 			
 			
-			
-			
-			<!-- BLOC PROTECTION -->
-			<a id="protectionposition"></a>
-			<section id="protection" class="content">
-				<div class="wrapper">
-					<div class="section-info">
-						<h1 data-localize="protection_title">Need for Protection</h1>
-						<p data-localize="protection_text">This conflict has a horrific human cost. Civilians are killed and children forcibly recruited. Sexual and gender-based violence has been used repeatedly as a weapon of war during the conflict, and aid workers are being killed and harassed across the country.</p>
-					</div>
-					<div class="row">
-						<div id="aidworkers" class="col3 infobox">
-							<img class="sectionicon" src="img/icon-SSD-aidworkers.png"/>
-							<h3 data-localize="aidworkers_title">Aid Workers Killed</h3>
-							<div class="col1">
-								<p class="figure" data-localize="figure_aidworkers"><span class="big-number decimal-figure">85</span><br/>since December 2013</p>
-							</div>
-						</div>
-						<div id="violence" class="col3 infobox">
-							<img class="sectionicon" src="img/icon-SSD-harassment.png"/>
-							<h3 data-localize="violence_title">Sexual and Gender-based Violence</h3>
-							<div class="col1">
-								<p class="figure" data-localize="figure_violence"><span class="big-number decimal-figure">2,600</span><br/>reported cases in 2016, but many more go unreported</p>
-							</div>
-						</div>
-						<div id="children" class="col3 infobox">
-							<img class="sectionicon" src="img/icon-SSD-militarykids.png"/>
-							<h3 data-localize="children_title">Child Soldiers</h3>
-							<div class="col1">
-								<p class="figure" data-localize="figure_children"><span class="big-number decimal-figure">18,000</span>+</p>
-							</div>
-						</div>
-					</div>
-					<p class="sources" data-localize="protection_sources">Sources: OCHA, Protection Cluster, UNICEF.</p>
-				</div>
-				
-				<div class="big-photo" id="protection-photo">
-					<div class="photo-caption">
-						<p data-localize="protection_photocaption">With greater resources, we can lead a more effective and coherent humanitarian response, placing emphasis on the protection of women, children and aid workers, and advocating that we are “not a target”.</p>
-					</div>
-				</div>
-			</section>
-			
-			
-			
-			
-			
-			
 			<!-- BLOC FUNDING -->
 			<a id="fundingposition"></a>
 			<section id="funding" class="content">
 				<div class="wrapper">
 					<div class="section-info">
 						<h1 data-localize="funding_title">Funding Needs</h1>
-						<p data-localize="funding_text">Funding is urgently needed to prevent further catastrophe, particularly during the rainy season, when delivering assistance is more costly and challenging. The 2017 Humanitarian Response Plan calls for assistance and protection for some 6.2 million people, but it is currently underfunded.</p>
+						<p data-localize="funding_text">Needs remain dire. Only sustained efforts can curb the trend, prevent famine, assist and protect the most vulnerable including in difficult-to-reach areas, and consolidate fragile gains.</p>
 					</div>
+					
+
+					
+					
+					
 					<div class="row">
+
 						<div id="funding-requirements" class="col2 infobox">
 							<img class="sectionicon" src="img/icon-SSD-money.png"/>
 							<h3 data-localize="immediate_requirements">2017 Requirements</h3>
-							<p class="figure"></p>
+		
+							<div  id='funding-requirements-niger' class="row">
+								<div class="col2">
+									<p class="CountryName">Niger</p>
+								</div>
+								<div class="col2">
+									<p class="figureCountry"></p>
+								</div>
+							</div>
+							<div  id='funding-requirements-nigeria' class="row">
+								<div class="col2">
+									<p class="CountryName">Nigeria</p>
+								</div>
+								<div class="col2">
+									<p class="figureCountry"></p>
+								</div>
+							</div>
+							<div  id='funding-requirements-cameroon' class="row">
+								<div class="col2">
+									<p class="CountryName">Cameroon</p>
+								</div>
+								<div class="col2">
+									<p class="figureCountry"></p>
+								</div>
+							</div>
+							<div  id='funding-requirements-chad' class="row">
+								<div class="col2">
+									<p class="CountryName">Chad</p>
+								</div>
+								<div class="col2">
+									<p class="figureCountry"></p>
+								</div>
+							</div>
 						</div>
 						<div id="funding-total" class="col2 infobox">
 							<img class="sectionicon" src="img/icon-SSD-moneyreceived.png"/>
 							<h3 data-localize="funding_received">Funding Received</h3>
-							<div class="row">
+
+							<div id='funding-total-niger' class="row">
 								<div class="col2">
-									<p class="figure"></p>
+									<p class="figureCountry"></p>
 								</div>
-								<div class="col2 percent-funded">
+								<div class="col2 percent-funded-country">
+									<!--chart svg goes here-->
+								</div>
+							</div>
+							<div id='funding-total-nigeria' class="row">
+								<div class="col2">
+									<p class="figureCountry"></p>
+								</div>
+								<div class="col2 percent-funded-country">
+									<!--chart svg goes here-->
+								</div>
+							</div>
+							<div id='funding-total-cameroon' class="row">
+								<div class="col2">
+									<p class="figureCountry"></p>
+								</div>
+								<div class="col2 percent-funded-country">
+									<!--chart svg goes here-->
+								</div>
+							</div>
+							<div id='funding-total-chad' class="row">
+								<div class="col2">
+									<p class="figureCountry"></p>
+								</div>
+								<div class="col2 percent-funded-country">
 									<!--chart svg goes here-->
 								</div>
 							</div>
@@ -409,61 +545,158 @@
 		
 		// get data for charts and tables
 		var data = {
-			"currentfunding" : <?php echo getImmediateFunding('South Sudan');?>,
-			"currentrequirements" : <?php echo getImmediateRequirements('South Sudan');?>,
-			"currentreqformatted" : "<?php echo formatNumber(getImmediateRequirements('South Sudan')); ?>",
+			"currentfunding" : <?php echo getImmediateFunding('Niger');?>,
+			"currentrequirements" : <?php echo getImmediateRequirements('Niger');?>,
+			"currentreqformatted" : "<?php echo formatNumber(getImmediateRequirements('Niger')); ?>",
+			"fundingParPays" : [
+				{
+					"countryName" : "Nigeria",
+					"currentfunding" : <?php echo getImmediateFunding('Nigeria');?>,
+					"currentrequirements" : <?php echo getImmediateRequirements('Nigeria');?>,
+					"currentreqformatted" : "<?php echo formatNumber(getImmediateRequirements('Nigeria')); ?>"
+				},
+				{
+					"countryName" : "Niger",
+					"currentfunding" : <?php echo getImmediateFunding('Niger');?>,
+					"currentrequirements" : <?php echo getImmediateRequirements('Niger');?>,
+					"currentreqformatted" : "<?php echo formatNumber(getImmediateRequirements('Niger')); ?>"
+				},
+				{
+					"countryName" : "Cameroon",
+					"currentfunding" : <?php echo getImmediateFunding('Cameroon');?>,
+					"currentrequirements" : <?php echo getImmediateRequirements('Cameroon');?>,
+					"currentreqformatted" : "<?php echo formatNumber(getImmediateRequirements('Cameroon')); ?>"
+				},
+				{
+					"countryName" : "Chad",
+					"currentfunding" : <?php echo getImmediateFunding('Chad');?>,
+					"currentrequirements" : <?php echo getImmediateRequirements('Chad');?>,
+					"currentreqformatted" : "<?php echo formatNumber(getImmediateRequirements('Chad')); ?>"
+				}
+			],
 			"peopleinneed" : [
 				{
-					"label" : "Protection",
+					"label" : "Nigeria",
 					"data_localization_code" : "protection_cluster",
-					"total" : 7300000
+					"total" : 450000
 				},
 				{
-					"label" : "Food Security/Livelihoods",
-					"data_localization_code" : "fsl_cluster",
-					"total" : 6500000
-				},
-				{
-					"label" : "Health",
+					"label" : "Cameroon",
 					"data_localization_code" : "health_cluster",
-					"total" : 5400000
+					"total" : 31000
 				},
 				{
-					"label" : "Water, Sanitation &amp; Hygiene",
+					"label" : "Chad",
+					"data_localization_code" : "fsl_cluster",
+					"total" : 22000
+				},
+				{
+					"label" : "Niger",
 					"data_localization_code" : "wash_cluster",
-					"total" : 5100000
+					"total" : 12000
+				}
+			],
+			"numberOfIncidents" : [
+				{
+					"label" : "Diffa",
+					"data_localization_code" : "stressed_label",
+					"total" : 100000
 				},
 				{
-					"label" : "Emergency Shelter &amp; NFI",
-					"data_localization_code" : "nfi_cluster",
-					"total" : 1900000
+					"label" : "Yobe",
+					"data_localization_code" : "catastrophe_label",
+					"total" : 743000
+				},
+				{
+					"label" : "Borno",
+					"data_localization_code" : "crisis_label",
+					"total" : 100000
+				},
+				{
+					"label" : "Adamawa",
+					"data_localization_code" : "emergency_label",
+					"total" : 100000
+				},
+				{
+					"label" : "Far-North",
+					"data_localization_code" : "emergency_label",
+					"total" : 100000
+				},
+				{
+					"label" : "Lac",
+					"data_localization_code" : "emergency_label",
+					"total" : 100000
+				}
+			],
+			"foodsecurityphaseAdmin1" : [
+				{
+					"label" : "Phase 1",
+					"data_localization_code" : "stressed_label",
+					"total" : 0
+				},
+				{
+					"label" : "Phase 2",
+					"data_localization_code" : "catastrophe_label",
+					"total" : 0
+				},
+				{
+					"label" : "Phase 3",
+					"data_localization_code" : "crisis_label",
+					"total" : 0
+				},
+				{
+					"label" : "Phase 4",
+					"data_localization_code" : "emergency_label",
+					"total" : 0
+				},
+				{
+					"label" : "Phase 5",
+					"data_localization_code" : "emergency_label",
+					"total" : 2297000
+				}
+			],
+			"displacedByCountry" : [
+				{
+					"label" : "Nigeria",
+					"data_localization_code" : "stressed_label",
+					"total" : 1616026
+				},
+				{
+					"label" : "Cameroon",
+					"data_localization_code" : "catastrophe_label",
+					"total" : 306078
+				},
+				{
+					"label" : "Niger",
+					"data_localization_code" : "crisis_label",
+					"total" : 247991
+				},
+				{
+					"label" : "Chad",
+					"data_localization_code" : "emergency_label",
+					"total" : 127268
 				}
 			],
 			"foodsecurityphase" : [
 				{
-					"label" : "Catastrophe",
-					"data_localization_code" : "catastrophe_label",
-					"total" : 45000
-				},
-				{
-					"label" : "Emergency",
-					"data_localization_code" : "emergency_label",
-					"total" : 1650000
-				},
-				{
-					"label" : "Crisis",
-					"data_localization_code" : "crisis_label",
-					"total" : 4346000
-				},
-				{
-					"label" : "Stressed",
+					"label" : "Nigeria",
 					"data_localization_code" : "stressed_label",
-					"total" : 3621000
+					"total" : 5248327
 				},
 				{
-					"label" : "Minimal",
-					"data_localization_code" : "minimal_label",
-					"total" : 2186000
+					"label" : "Cameroon",
+					"data_localization_code" : "catastrophe_label",
+					"total" : 1455076
+				},
+				{
+					"label" : "Niger",
+					"data_localization_code" : "crisis_label",
+					"total" : 408000
+				},
+				{
+					"label" : "Chad",
+					"data_localization_code" : "emergency_label",
+					"total" : 123275
 				}
 			],
 			"peopledisplaced" : [
