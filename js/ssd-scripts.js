@@ -21,6 +21,12 @@ function closeNav() {
 }
 
 // formatting and helper functions
+function formatNumber(n) {
+	if (n > 1000000000) return '<span class=decimal-figure>' + (n / 1000000000).toFixed(1) + 'B</span>';
+	if (n > 1000000) return '<span class=decimal-figure>' + (n / 1000000).toFixed(0) + 'M</span>';
+	if (n > 1000) return '<span  class=decimal-figure>' + (n / 1000).toFixed(0) + 'K</span>';
+}
+
 function formatMillionsasBillions(n) {
 	var n = (n / 1000000000).toFixed(1);
 	return '<span class="big-number decimal-figure">' + n + '</span>';
@@ -218,9 +224,9 @@ function createFundingChart(currentfunding,currentrequirements) {
 // create displacement donut
 function createDisplacementChart() {
 	// set data for donut chart
-	var refugees = 203606;
-	var idps = 2064401;
-	var returnes = 29356;
+	var refugees = 205456;
+	var idps = 2067653;
+	var returnes = 33273;
 	
 	var dataset = [
 		{ "label": "IDPs", "amount": idps, "color" : "rgb(65,143,222)","localize_label" : "idps_label"},
@@ -507,6 +513,7 @@ function init(data){
 	
 		
 	// append Situation tables
+	/*
 	$('#people-in-need table').html(function() {
 		var highest = getHighest(peopleinneed, "total");
 		var markup = '';
@@ -522,6 +529,9 @@ function init(data){
 		}
 		return markup;
 	});
+	*/
+	
+	/*
 	$('#malnourished table').html(function() {
 		var highest = getHighest(foodsecurityphase, "total");
 		var markup = '';
@@ -537,7 +547,9 @@ function init(data){
 		}
 		return markup;
 	});
+	*/
 	
+	/*
 	$('#displacedByCountry table').html(function() {
 		var highest = getHighest(displacedByCountry, "total");
 		var markup = '';
@@ -552,8 +564,9 @@ function init(data){
 					'</tr>';
 		}
 		return markup;
-	});
+	});*/
 	
+	/*
 	$('#foodsecurityphaseAdmin1 table').html(function() {
 		var highest = getHighest(foodsecurityphaseAdmin1, "total");
 		var markup = '';
@@ -569,7 +582,9 @@ function init(data){
 		}
 		return markup;
 	});
+	*/
 	
+	/*
 	$('#numberOfIncidents table').html(function() {
 		var highest = getHighest(numberOfIncidents, "total");
 		var markup = '';
@@ -585,19 +600,19 @@ function init(data){
 		}
 		return markup;
 	});
-	
+	*/
 	
 	//SET FUNDING REQUIEREMENT BY COUNTRY
-	$('#funding-requirements-nigeria .figureCountry').html(' <span data-localize="dollar_sign">$</span><span class="big-number decimal-figure"><span class="big-number_rowca decimal-figure">' + fundingParPays[0].currentreqformatted + '</span></span><span data-localize="billions">Billion</span>');
-	$('#funding-requirements-niger .figureCountry').html(' <span data-localize="dollar_sign">$</span><span class="big-number decimal-figure"><span class="big-number_rowca decimal-figure">' + fundingParPays[1].currentreqformatted + '</span></span><span data-localize="billions">Billion</span>');
-	$('#funding-requirements-cameroon .figureCountry').html(' <span data-localize="dollar_sign">$</span><span class="big-number decimal-figure"><span class="big-number_rowca decimal-figure">' + fundingParPays[2].currentreqformatted + '</span></span><span data-localize="billions">Billion</span>');
-	$('#funding-requirements-chad .figureCountry').html(' <span data-localize="dollar_sign">$</span><span class="big-number decimal-figure"><span class="big-number_rowca decimal-figure">' + fundingParPays[3].currentreqformatted + '</span></span><span data-localize="billions">Billion</span>');
+	$('#funding-requirements-nigeria .figureCountry').html('<span class="big-number decimal-figure"><span class="big-number_rowca decimal-figure">' + formatNumber(fundingParPays[0].currentreqformatted) + '</span></span>');
+	$('#funding-requirements-niger .figureCountry').html('<span class="big-number decimal-figure"><span class="big-number_rowca decimal-figure">' + formatNumber(fundingParPays[1].currentreqformatted) + '</span></span>');
+	$('#funding-requirements-cameroon .figureCountry').html('<span class="big-number decimal-figure"><span class="big-number_rowca decimal-figure">' + formatNumber(fundingParPays[2].currentreqformatted) + '</span></span>');
+	$('#funding-requirements-chad .figureCountry').html('<span class="big-number decimal-figure"><span class="big-number_rowca decimal-figure">' + formatNumber(fundingParPays[3].currentreqformatted) + '</span></span>');
 	
 	//SET FUNDING BY COUNTRY
-	$('#funding-total-nigeria .figureCountry').html('<span data-localize="dollar_sign">$</span><span class="big-number_rowca decimal-figure">' + formatMillionsasBillions(fundingParPays[0].currentfunding) + '</span><span data-localize="billions">Billion</span>');
-	$('#funding-total-niger .figureCountry').html('<span data-localize="dollar_sign">$</span><span class="big-number_rowca decimal-figure">' + formatMillionsasBillions(fundingParPays[1].currentfunding) + '</span><span data-localize="billions">Billion</span>');
-	$('#funding-total-cameroon .figureCountry').html('<span data-localize="dollar_sign">$</span><span class="big-number_rowca decimal-figure">' + formatMillionsasBillions(fundingParPays[2].currentfunding) + '</span><span data-localize="billions">Billion</span>');
-	$('#funding-total-chad .figureCountry').html('<span data-localize="dollar_sign">$</span><span class="big-number_rowca decimal-figure">' + formatMillionsasBillions(fundingParPays[3].currentfunding) + '</span><span data-localize="billions">Billion</span>');
+	$('#funding-total-nigeria .figureCountry').html('<span class="big-number_rowca decimal-figure">' + formatNumber(fundingParPays[0].currentfunding) + '</span>');
+	$('#funding-total-niger .figureCountry').html('<span class="big-number_rowca decimal-figure">' + formatNumber(fundingParPays[1].currentfunding) + '</span>');
+	$('#funding-total-cameroon .figureCountry').html('<span class="big-number_rowca decimal-figure">' + formatNumber(fundingParPays[2].currentfunding) + '</span>');
+	$('#funding-total-chad .figureCountry').html('<span class="big-number_rowca decimal-figure">' + formatNumber(fundingParPays[3].currentfunding) + '</span>');
 	
 	
 	//PUT CHART PER COUNTRY
@@ -614,7 +629,7 @@ function init(data){
 	// $('#funding-total .CountryName').html('<span data-localize="billions">Billion</span>');
 	
 	// append donut charts
-	createDisplacementChart();
+	//createDisplacementChart();
 	//createFundingChart(currentfunding,currentrequirements);
 	
 	//make my tooltips work

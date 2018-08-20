@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+
+	</head>
+	
+	<body>
+	<script>
+		
+	</script>
+	
+	<script>
+	
+	  var spData = null;
+	  var figuresNiger = {};
+	  var figuresCameroun = {};
+	  var figuresNigeria = {};
+	  var figuresChad = {};
+
+  function doData(json) {
+      spData = json.feed.entry;
+  }
+
+  function drawCell(tr, val, isHeader) {
+      var td = $(isHeader ? "<th/>" : "<td/>");
+      tr.append(td);
+      td.append(val);
+      return td;
+  }
+
+  function drawRow(table, rowData, isHeader) {
+      if (rowData == null) return null;
+      if (rowData.length == 0) return null;
+      var tr = $("<tr/>");
+      if (isHeader) tr.addClass("head");
+      table.append(tr);
+      for (var c = 0; c < rowData.length; c++) {
+          drawCell(tr, rowData[c], ((c == 0) || isHeader));
+      }
+      return tr;
+  }
+
+  function drawTable(parent) {
+      var table = $("<table/>");
+      parent.append(table);
+      return table;
+  }
+
+  function readData(parent) {
+      var data = spData;
+	  
+
+      var rowData = [];
+      var row = 0;
+
+      for (var r = 0; r < data.length; r++) {
+          var cell = data[r]["gs$cell"];
+          var val = cell["$t"];
+          if (cell.col == 1) {
+
+
+			  
+			  if(rowData[0]=="Niger"){
+				figuresNiger["PeopleInNeed"]=rowData[1];
+				figuresNiger["PeopleTargeted"]=rowData[2];
+				figuresNiger["Requirement"]=rowData[3];
+				figuresNiger["FoodInsecurePeople"]=rowData[4];
+				figuresNiger["SAMBurden"]=rowData[5];
+				figuresNiger["Refugees"]=rowData[6];
+				figuresNiger["IDPs"]=rowData[7];
+			  }
+			  
+			  if(rowData[0]=="Cameroon"){
+				figuresCameroun["PeopleInNeed"]=rowData[1];
+				figuresCameroun["PeopleTargeted"]=rowData[2];
+				figuresCameroun["Requirement"]=rowData[3];
+				figuresCameroun["FoodInsecurePeople"]=rowData[4];
+				figuresCameroun["SAMBurden"]=rowData[5];
+				figuresCameroun["Refugees"]=rowData[6];
+				figuresCameroun["IDPs"]=rowData[7];
+			  }
+			  
+			  if(rowData[0]=="Nigeria"){
+				figuresNigeria["PeopleInNeed"]=rowData[1];
+				figuresNigeria["PeopleTargeted"]=rowData[2];
+				figuresNigeria["Requirement"]=rowData[3];
+				figuresNigeria["FoodInsecurePeople"]=rowData[4];
+				figuresNigeria["SAMBurden"]=rowData[5];
+				figuresNigeria["Refugees"]=rowData[6];
+				figuresNigeria["IDPs"]=rowData[7];
+			  }
+			  
+			 
+			  
+			  
+              rowData = [];
+              row++;
+          }
+		  
+		if(rowData[0]=="Chad"){
+			figuresChad["PeopleInNeed"]=rowData[1];
+			figuresChad["PeopleTargeted"]=rowData[2];
+			figuresChad["Requirement"]=rowData[3];
+			figuresChad["FoodInsecurePeople"]=rowData[4];
+			figuresChad["SAMBurden"]=rowData[5];
+			figuresChad["Refugees"]=rowData[6];
+			figuresChad["IDPs"]=rowData[7];
+		  }
+		  
+          rowData.push(val);
+      }
+	  console.log("----");
+	  console.log(figuresNiger);
+	  console.log(figuresCameroun);
+	  console.log(figuresNigeria);
+	  console.log(figuresChad);
+
+  }
+  $(document).ready(function () {
+      readData($("#data"));
+	  
+	  
+  });
+	
+	</script>
+	
+	
+	<script src="https://spreadsheets.google.com/feeds/cells/1D_RzWxPHBHH4mv4RcvGlKomBWgD9_1NAD6EirgMrabM/1/public/values?alt=json-in-script&callback=doData"></script>
+
+	</body>
+	
+</html>
